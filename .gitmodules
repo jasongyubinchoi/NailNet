@@ -1,0 +1,3 @@
+[submodule "NailNet"]
+	path = NailNet
+	url = https://github.com/jasongyubinchoi/NailNet.git
