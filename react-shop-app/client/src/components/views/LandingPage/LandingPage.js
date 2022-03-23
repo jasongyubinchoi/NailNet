@@ -212,7 +212,7 @@ function LandingPage() {
       </Row>
 
       {/* Search  */}
-      <div
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "flex-end",
@@ -220,7 +220,10 @@ function LandingPage() {
         }}
       >
         <SearchFeature refreshFunction={updateSearchTerms} />
-      </div>
+      </div> */}
+
+      <br/>
+      <br/>
 
       {Products.length === 0 ? (
         <div
