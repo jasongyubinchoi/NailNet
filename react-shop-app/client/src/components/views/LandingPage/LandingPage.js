@@ -137,79 +137,89 @@ function LandingPage() {
   };
 
   return (
-    <div style={{ width: "75%", margin: "3rem auto" }}>
+    <div style={{ width: "90%", margin: "3rem auto" }}>
       <div style={{ textAlign: "center" }}>
         {/* <h2>  Let's Travel Anywhere  <Icon type="rocket" />  </h2> */}
       </div>
 
       {/* Filter  */}
-      <Row gutter = {[16,16]}>
-      <Col lg={5} xs={10} >
+      {/* <Row gutter = {[16,16]}> */}
+      <Col lg={4} xs={10} >
         <RadioBox
         list = {filterData["services"]} title = "Service" filterType = "radioBox"
           handleFilters = {filters => handleFilters(filters, "services")}
           />
       </Col>
-      <Col lg={5} xs={10} >
+      <Col lg={3} xs={10} >
         <RadioBox
         list = {filterData["locations"]} title = "Location" filterType = "radioBox"
           handleFilters = {filters => handleFilters(filters, "locations")}
           />
       </Col>
-      <Col lg={5} xs={10} >
+      <Col lg={3} xs={10} >
         <RadioBox
         list = {filterData["environments"]} title = "Environment" filterType = "radioBox"
           handleFilters = {filters => handleFilters(filters, "environments")}
           />
       </Col>
-      <Col lg={5} xs={10} >
+      <Col lg={2} xs={10} >
         <CheckBox 
         list = {filterData["lengths"]} title = "Length" 
             handleFilters = {filters => handleFilters(filters, "lengths")}
         />
       </Col>
-      </Row>
-      <br/>
-      <br/>
-
-      <Row gutter = {[16,16]}>
-      <Col lg={5} xs={10} >
+      <Col lg={2} xs={10} >
         <RadioBox
         list = {filterData["shapes"]} title = "Shape" filterType = "radioBox"
           handleFilters = {filters => handleFilters(filters, "shapes")}
           />
       </Col>
-      <Col lg={5} xs={10}  >
+      <Col lg={2} xs={10}  >
         <RadioBox
         list = {filterData["types"]} title = "Types" filterType = "radioBox"
           handleFilters = {filters => handleFilters(filters, "types")}
           />
       </Col>
-      <Col lg={5} xs={10} >
+      <Col lg={3} xs={10} >
         <RadioBox filterType = "radioBox"
-        list = {filterData["enhancementExtensions"]} title = "Enhancement Extension"
+        list = {filterData["enhancementExtensions"]} title = "Extension"
           handleFilters = {filters => handleFilters(filters, "enhancementExtensions")}
           />
       </Col>
-      <Col lg={5} xs={10} >
+      <Col lg={2} xs={10} >
         <RadioBox filterType = "radioBox"
         list = {filterData["ratings"]} title = "Rating"
           handleFilters = {filters => handleFilters(filters, "ratings")}
           />
       </Col>
+      <Col lg={3} xs={10} >
+        <RadioBox filterType = "radioBox"
+        list = {filterData["nailArts"]} title = "Nail Art"
+          handleFilters = {filters => handleFilters(filters, "nailArts")}
+          />
+      </Col>
+      {/* </Row> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      {/* <Row gutter = {[16,16]}>
+      
       </Row>
       <br/>
       <br/>
       <Row gutter = {[16,16]}>
       
       
-      <Col lg={5} xs={10} >
-        <RadioBox filterType = "radioBox"
-        list = {filterData["nailArts"]} title = "Nail Art"
-          handleFilters = {filters => handleFilters(filters, "nailArts")}
-          />
-      </Col>
-      </Row>
+      
+      </Row> */}
 
       {/* Search  */}
       {/* <div
